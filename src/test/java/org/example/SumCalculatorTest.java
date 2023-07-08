@@ -47,4 +47,15 @@ public class SumCalculatorTest {
 
         Assertions.assertNotEquals(expected, result);
     }
+
+    @Test
+    public void testThatCalcWorksCorrectWith10() {
+        //When
+        int result = calc.sum(10);
+
+        //Then
+        int expected = 55;
+
+        Assertions.assertEquals(expected, result);
+    }
 }
